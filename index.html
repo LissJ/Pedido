@@ -1,19 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Por favor :)</title>
     <script src="main.js"></script>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            src: url(font/Poppins-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'Poppins Bold';
+            src: url(font/Poppins-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: 'OpenSans';
+            src: url(font/OpenSans-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'OpenSans Bold';
+            src: url(font/OpenSans-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            src: url(font/Roboto-Regular.ttf);
+        }
+
+        body {
+            background: linear-gradient(#5858fc, #003e80);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .btn {
+            background-color: #0e0088;
+            color: white;
+            font: 300 40px 'Poppins', sans-serif;
+            padding: 15px 30px;
+            width: 200px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: ease-in-out 0.2s;
+        }
+
+        .tituloPrincipal {
+            font: 500 40px 'Poppins', sans-serif;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 450px;
+        }
+
+        @media screen and (max-width: 426px) {
+            div#bt.botoes {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 8px;
+            }
+
+            .btn {
+                background-color: #0e0088;
+                color: white;
+                font: 300 35px 'Poppins', sans-serif;
+                padding: 13px 20px;
+                width: 200px;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: ease-in-out 0.2s;
+            }
+
+            .tituloPrincipal {
+                margin-left: 18px;
+            }
+        }
+
+        @media screen and (max-width: 376px) {
+            div#bt.botoes {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 10px;
+            }
+
+            .btn {
+                background-color: #0e0088;
+                color: white;
+                font: 300 35px 'Poppins', sans-serif;
+                padding: 10px 15px;
+                width: 170px;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: ease-in-out 0.2s;
+            }
+
+            .tituloPrincipal {
+                margin-left: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div class="titulo">
         <h1 class="tituloPrincipal">
             QUER JOGAR COMIGO?
         </h1>
     </div>
-    <div class="botoes">
+    <div class="botoes" id="bt">
         <div class="botaoS">
             <button class="btn" onclick="sim()">
                 SIM
@@ -26,6 +138,7 @@
         </div>
     </div>
 
-    
+
 </body>
+
 </html>
